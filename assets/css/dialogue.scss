@@ -1,0 +1,62 @@
+@import '_variables';
+
+.dialogue-box {
+  //background-color: #dad2bc;
+  font-family: $serif-font;
+  font-size: 1.1rem;
+  //margin: 2em -1em 2.5em -1em;
+  //margin-top: 3rem;
+  //margin-bottom: 3rem;
+  color: $dialogue-font-color;
+  //border: 1px dotted black; 
+  display: flex;
+
+  //box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 10px;
+  //box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  border-bottom: 3px solid purple;
+  border-top: 3px solid darkblue;
+  padding-top: .618rem;
+  padding-bottom: .618rem;
+  margin-bottom: 1rem;
+}
+
+.dialogue-speaker-name {
+  //font-weight: bold;
+  font-variant: small-caps;
+  font-family: $serif-font;
+  font-size: 1rem;
+  padding-left: 1rem;
+  
+  //padding-bottom: .5rem;
+  padding-right: .5rem;
+}
+
+.dialogue-speaker-text {
+  padding-left: 1rem;
+  
+  font-family: $handwriting-font;
+  
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  color: darken($player-log-font-color,25%);
+  line-height: 1.3rem;
+}
+
+.dialogue-speaker-text::before {
+  content: open-quote;
+}
+
+.dialogue-speaker-text::after {
+  content: close-quote;
+}
+
+
+.portrait {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding-top: .1em;
+  padding-left: .1em;
+  
+}

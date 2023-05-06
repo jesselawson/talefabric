@@ -1,0 +1,71 @@
+@import '_variables';
+
+
+.playerOptionsContainer {
+  
+  // Give bottom of screen some breathing room 
+  margin-bottom: 3em;
+  margin-top: 0em;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: left; 
+  
+  overflow:visible;
+
+  
+  
+} 
+
+.playerOptionsContainer > label {
+  padding: .23em;
+  margin-bottom: .5em;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  flex-direction: row;
+  justify-content: left;
+  animation-fill-mode: forwards;
+  //box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  //box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.playerOptionsContainer > label > span > input {
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: text-bottom;
+}
+
+#player-confirm-button {
+  //box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 5px;
+  line-height: 1em;
+  padding: .5em;
+}
+
+// This stuff matters!
+#player-options {
+  
+  transition: height 500ms ease-out;
+  height:0;
+  
+  &.open {
+    height: auto;
+  }
+}
+
+.option-attribute-label {
+  border-radius: 5px;
+  
+}
+
+.option-dc-attribute {
+  
+  border-radius: 5px;
+  padding: 0 3px;
+  font-variant: small-caps;
+  color: #6A66A3;
+  //font-size: 1.5rem;
+  //font-family: $serif-font;
+  background-color: #eee; 
+}

@@ -1,0 +1,19 @@
+{
+  "name": "talefabric",
+  "version": "0.1.0",
+  "author": {"name": "Jesse Lawson", "email": "jesselawson@protonmail.com", "url": "https://jesselawson.org"},
+  "license": "MIT",
+  "scripts": {
+    "start": "rm -rf .parcel-cache && yarn parcel index.html assets/portraits/* assets/images/*"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "@types/node": "^18.11.9",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.5.14",
+    "typescript": "^4.8.4",
+    "uuid": "^9.0.0"
+  }
+}
