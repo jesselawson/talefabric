@@ -40,6 +40,15 @@ _I'm, using Yarn but npm should work just fine._
 - Types are all mostly documented; they live in `core/datamodels.ts`.
 - How do things work? Check out `core/engine.ts`. 
 
+**To build your story**:
+
+Here's the exact command I use to build the `docs` folder in this repo, which is, 
+for our purposes, a compiled demo:
+
+```
+yarn parcel build index.html --public-url ./ --out-dir docs
+```
+
 
 # Original vision
 
